@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>감자한 하루</title>
+<style type="text/css">
+	body{
+    background-color: #FFEDC8;
+	}
+	footer{
+    background-color: #E3E3E3;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "나눔고딕";
+    font-size: 9.5px;
+    padding: 10px;
+	}
+	.top{
+		margin-left: 30px;
+	overflow: hidden;
+	}
+	.navigation{
+	float: right;
+	margin-top: 45px;
+	margin-right: 30px;
+	text-align: center;
+	color: #683B10;
+	font-size: 12px;
+	font-family: "G마켓 산스 TTF Medium";
+	}
+	
+	.photo:link{
+		color: #683b10;
+		text-decoration: none;
+	}
+	.photo:visited{
+		color: #683b10;
+		text-decoration: none;
+	}
+	.photo:hover{
+    background-color: #FFE5E5;
+    text-decoration: none;
+    font-weight: bold;
+	}
+	.imgbox{
+    font-family: "G마켓 산스 TTF Medium";
+    text-align: center;
+    margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;}
+	.new{
+		font-family: "G마켓 산스 TTF Medium";
+		margin-top: 100px;
+		margin-left: 60px;
+	}
+	.newphoto{
+		font-family: "G마켓 산스 TTF Medium";
+		margin-top: 100px;
+		text-align: center;
+		margin-left: 60px;
+	}
+	.hot{
+		font-family: "G마켓 산스 TTF Medium";
+		margin-top: 100px;
+		margin-left: 60px;
+	}
+	#popup{
+		position: absolute;
+	top: 10px;
+	left: 20px;
+	}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/birthday.jpg','img/potatocollect.jpg','img/goodpotato.jpg')">
+<div id="popup">
+	<img src="img/popup.jpg" width="250" height="300" id="Image1" onClick="MM_DW_effectFade($('#popup'),'hide','fade',3000)">
+	</div>
+<div class="top">
+	<a href="index.html">
+	<img src="img/logo.png" style="float: left; margin-left: 20px; margin-top: 20px;"  width="190" height="80">
+	</a>
+	<table class="navigation" border="0">
+  <tbody>
+    <tr>
+      <td><a href="index.html" class="photo">A B O U T</a>&nbsp; </td>
+	<td><a href="photo.html" class="photo">P H O T O</a>&nbsp;&nbsp;</td>
+      <td><a href="index.html" class="photo">B O A R D</a> &nbsp; </td>
+      <td><a href="index.html" class="photo">L E T T E R</a> &nbsp;   </td>
+      <td><a href="index.html" class="photo">J O I N</a> &nbsp; </td>
+      <td><a href="index.html" class="photo">L O G I N</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<div>
+  <table width="90%" height="300" border="0" class="imgbox">
+    <tbody>
+       <tr>
+         <td width="70%" rowspan="3" style="background: #FFE5E5"><img src="img/birthday.jpg" alt="" width="570" height="300" id="main"/></td>
+         <td width="20%" height="100" style="background: #FFFFFF"><p onMouseOver="MM_swapImage('main','','img/birthday.jpg',1)">감자의 생일파티</p></td>
+       </tr>
+       <tr>
+         <td height="100" style="background: #FFFFFF" onMouseOver="MM_swapImage('main','','img/potatocollect.jpg',1)">제일 귀여운 감자 모음<br></td>
+       </tr>
+       <tr>
+         <td height="100" style="background: #FFFFFF" onMouseOver="MM_swapImage('main','','img/goodpotato.jpg',1)">감자에게는 좋은 말만</td>
+       </tr>
+     </tbody>
+   </table>
+</div>
+	
+	<div class="new">
+	  <table width="90%" border="0">
+	    <tbody>
+	      <tr>
+	        <td width="45%" height="45" style="color: #683B10; font-weight: bold;"><a href="index.html" class="photo">NEW BOARD</a></td>
+	        <td width="10%" rowspan="6">&nbsp;</td>
+	        <td width="45%" style="color: #683B10; font-weight: bold;"><a href="index.html" class="photo">NEW LETTER</a></td>
+          </tr>
+	      <tr>
+	        <td height="20">▶ 감자군 새로운 소식 들었어요? <span style="color: #FF7C7F">[1]</span></td>
+	        <td><span style="color: #683B10">[To. 감자]</span> 감자야 들어와서 . 이라도 찍어주라</td>
+          </tr>
+	      <tr>
+	        <td height="20">▶ 감자 생일파티 가시는 분? <span style="color: #FF7C7F">[10]</span></td>
+	        <td><span style="color: #683B10">[To. 감자]</span> 나의 별 감자에게</td>
+          </tr>
+	      <tr>
+	        <td height="20">▶ 진짜 넘 귀엽다 ... 천사 아니냐며 ... <span style="color: #FF7C7F">[3]</span></td>
+	        <td bgcolor="#FFE5E5"><span style="color: #683B10">[From. 감자]</span> 월!! 멍!! 와우와우!! <span style="color: #FF7C7F">[999+]</span></td>
+          </tr>
+	      <tr>
+	        <td height="20">▶ 내가 제일 좋아하는 감자의 날 ... <span style="color: #FF7C7F">[2]</span></td>
+	        <td><span style="color: #683B10">[To. 감자] </span>감자야 왕감자 vs 감자감자뿅 골라줘 <span style="color: #FF7C7F">[2]</span></td>
+          </tr>
+	      <tr>
+	        <td height="20">▶ 왕감자 분들!! 들어와보세요!! <span style="color: #FF7C7F">[11]</span></td>
+	        <td><span style="color: #683B10">[To. 감자]</span> 너 생각나서 오늘 감자전 먹었어 .... </td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+	
+	<div class="newphoto">
+	  <table width="90%" border="0">
+	    <tbody>
+	      <tr>
+	        <td height="45" colspan="4" style="color: #683B10; font-weight: bold;"><a href="photo.html" class="photo">NEW PHOTO</a></td>
+          </tr>
+	      <tr>
+	        <td width="25%" height="220" bgcolor="#FFE5E5"><a href="photo_detail.html"><img src="img/potato1.jpg" width="184" height="176" alt=""/></a></td>
+	        <td width="25%" bgcolor="#FFE5E5"><img src="img/potato2.jpg" width="184" height="140" alt=""/></td>
+	        <td width="25%" bgcolor="#FFE5E5"><img src="img/potato3.jpg" width="184" height="140" alt=""/></td>
+	        <td width="25%" bgcolor="#FFE5E5"><img src="img/potato4.jpg" width="184" height="184" alt=""/></td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+	
+	<div class="hot">
+	  <table width="90%" border="0" height="200">
+	    <tbody>
+	      <tr>
+	        <td width="45%" height="45" style="font-weight: bold"><a href="index.html" class="photo">HOT 게시판</a></td>
+	        <td width="15%" rowspan="7">&nbsp;</td>
+	        <td width="45%" style="font-weight: bold"><a href="index.html" class="photo">연합 팬 페이지</a></td>
+          </tr>
+	      <tr>
+	        <td bgcolor="#FFE5E5"><span style="color: #683b10">1.</span> <span style="color: #683B10">[From. 감자]</span> 월!! 멍!! 와우와우!! <span style="color: #FF7C7F">[999+]</span></td>
+			  <td rowspan="2"><a href=""><img src="img/banner1.jpg" width="150" height="40" alt=""/></a></td>
+          </tr>
+	      <tr>
+	        <td><span style="color: #683b10">2.</span> <span style="color: #683B10">[공지]</span> 감자 팬미팅 티켓팅 안내</td>
+          </tr>
+	      <tr>
+	        <td><span style="color: #683b10">3.</span> 감자 사진 짤털합니다 ~ <span style="color: #FF7C7F">[81]</span></td>
+			  <td rowspan="2"><a href=""><img src="img/banner2.jpg" width="150" height="40" alt=""/></a></td>
+          </tr>
+	      <tr>
+	        <td><span style="color: #683b10">4. </span>선물 뭐 보낼까? 골라주라 <span style="color: #FF7C7F">[52]</span></td>
+          </tr>
+	      <tr>
+	        <td><span style="color: #683b10">5.</span> 그냥 .. 발 꼬순내 한 번 맡아봤으면 .. <span style="color: #FF7C7F">[13]</span></td>
+			  <td rowspan="2"><a href=""><img src="img/banner3.jpg" width="150" height="40" alt=""/></a></td>
+          </tr>
+	      <tr>
+	        <td><span style="color: #683b10">6.</span> 왕감자 분들!! 들어와보세요!! <span style="color: #FF7C7F">[11]</span></td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+	
+	 <footer>
+	<p>감자를 <span style="color: #FF7C7F; font-weight: bold;">사랑♡</span>하는 모든 사람들을 위한 곳•ܫ•<br>
+	  <br>
+	  팬 페이지의 저작권은 <span style="font-weight: bold">감자한 하루</span>에게 있습니다.<br>
+	  Copyright © PotatoDay Corp. All Rights Reserved.	</p>
+	</footer>
+	
+	
+</body>
+</html>
